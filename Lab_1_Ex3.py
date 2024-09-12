@@ -12,5 +12,5 @@ while 1:
     pot = ADC(26)                       # potentiometer signal converted from analog to digital on pin 26
     pot_value = pot.read_u16()          # read potentiometer 
     pwmPin27 = PWM(Pin(27), freq= 1000) # use pwm output w/ set freq. to LED w/ Pin 27
-    P27 = pwmPin27.duty_u16(pot_value)  # duty cycle is based off of potentiometer value
+    P27 = pwmPin27.duty_u16(pot_value)  # duty cycle is based off of potentiometer value to control LED brightness
     print(pot_value)                    # prints potetiometer value just for good measure
